@@ -1,0 +1,17 @@
+# BEGIN KoPreDge
+# TODO: Adjust to fit KoPreDge assumptions
+<IfModule mod_rewrite.c>
+    ###### Rewrites static assets so Apache can serve the files directly.
+    RewriteEngine on
+
+    ### admin public assets
+    RewriteCond %{QUERY_STRING} kr=kohana-wp2/public/(.*)$
+    RewriteRule ^.*$ wp-content/plugins/kohana-wp2/public/%1? [L]
+
+    ### application public assets
+    # must have 'kr' variable and /public/. capture the application as %1 and the rest of the URL as %2
+    RewriteCond %{QUERY_STRING} kr=([^/]+)/public/(.*)$
+    # rewrite it to wp-content, the ? at end strips the querystring so rewrite is not recursive on internal redirect
+    RewriteRule ^.*$ wp-content/kohana/sites/all/%1/public/%2? [L]
+</IfModule>
+# END KoPreDge

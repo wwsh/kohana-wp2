@@ -1,0 +1,7 @@
+*.bak
+.DS_Store
+*.swo
+*.swp 
+.*.swp
+**/logs/2???
+!.gitkeep

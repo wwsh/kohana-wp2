@@ -1,0 +1,29 @@
+<link type="text/css" href="{{app_url}}/public/css/style.css" rel="stylesheet" />
+
+<div class="wrap">
+    <div class="wrap nosubsub">
+       <div id="icon-edit-pages" class="icon32"><br /></div>
+
+        <h2>Kohana-WP Control Panel</h2>
+
+        {{&flash}}
+
+        <p>
+            Kohana-WP allows seamless use of Kohana MVC to build admin pages, normal pages, enhance posts,
+            etc. The goal is to make WordPress the premier PHP CMS development platform. To learn more about Kohana
+            see <a href="http://kohanaphp.com/">http://kohanaphp.com</a>
+        </p>
+
+        <br class="clear" />
+
+        <div id="navmenu">
+            <ul>
+                {{#nav_list}}
+                    <li><a class="{{class}}" href="{{&href}}">{{caption}}</a></li>
+                {{/nav_list}}
+            </ul>
+        </div>
+        
+        {{&content}}
+    </div>
+</div>

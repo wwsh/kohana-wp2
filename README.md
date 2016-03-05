@@ -84,7 +84,7 @@ Link all AJAX calls into the admin-ajax.php and keep WP Ajax standards.
 Detailed documentation may follow soon.
 ## Notice
 
-This plugin code has not been following any coding standards and was rewritten for some specific demand with the intention never to be published. We decided otherwise, though, due to lacking support of the dying out Kohana 3.x and Kohana integration misery in the WP world. Hence this public upload.
+This plugin code has not been following any coding standards and was modified for some specific demand with the intention never to be published. We decided otherwise, though, due to lacking support of the dying out Kohana 3.x and Kohana integration misery in the WP world. Hence this public upload.
 
 ## TODO
 * Refactoring

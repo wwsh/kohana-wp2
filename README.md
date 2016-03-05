@@ -67,6 +67,7 @@ Do not forget to include all specific modules into the plugins/kohana-wp2/module
 ## Shortcode
 Usage:
 > [kohana_exec radiotoolkit/widgets_sandbox/show?_id=chat&channel=PUBLICCHAT&name=PUBLIC]
+
 Explanation:
 * First part is the original Kohana route (radiotoolkit app, widgets/sandbox controller, show method)
 * ? part are the parameters to be passed statically as GET parameters into the code. So, the app will receive:
